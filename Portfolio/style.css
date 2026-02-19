@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(17, 133, 162);
+    color: #ffffffc1;
+}
+
+header {
+    padding: 5px;
+    background-color: rgb(31, 34, 53);
+    align-items: center;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5px;
+    width: 20%;
+    padding: 15px;
+    text-align: center;
+    text-overflow: clip;
+    background-color: rgb(8, 76, 222);
+    font-size: 40px;
+    border: 4px solid rgb(66, 7, 193);
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline;
+}
+
+#name {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.active {
+    text-decoration: underline;
+    color: rgb(223, 136, 136);
+}
+
+nav a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #cd0b6c;
+    text-align: center;
+    display: inline;
+    justify-content: space-evenly;
+    overflow-x: auto;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-style: dotted;
+}
+
+main{
+    margin-top: 95.5px;
+}
+#subname{
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(218, 186, 143);
+    margin: 0px;
+    color: #cd0b6c;
+    font-size: 2em;
+    height: 60px;
+}
+
+ul{
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: rgb(100, 60, 30)
+}
+
+#p {
+    color: rgb(238, 238, 78);
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.clip {
+    clip-path: circle(43% at 50% 40%);
+}
+
+#about {
+    padding: 5px;
+}
+
+#aside {
+    background-color: chartreuse;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 0.2s;
+}
+
+.project {
+    width: calc(33% - 20px);
+    padding: 2px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.project-container .project:hover {
+    transform: scale(1.1);
+}
+
+.table {
+    width: 100%;
+}
+
+.table tr,
+.table td {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    background-color: rgb(239, 190, 198);
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 80%;
+    height: 50px;
+}
+
+textarea {
+    height: 100px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(189, 218, 243);
+}
+
+.action {
+    padding: 10px;
+    background-color: chocolate;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 10px;
+    width: 170px;
+    height: 50px;
+    border: 3px solid rgb(65, 26, 204);
+    border-radius: 15px;
+}
+
+footer {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 0%;
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(171, 212, 7);
+}
+
+@media(max-width:1276px){
+    main{
+        margin-top: 141px;
+    }
+}
+
+@media(max-width:600px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        width: 70%;
+        margin-bottom: 5px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    main{
+        margin-top: 122px;
+    }
+
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+    }
+
+    td.ankanimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clip {
+        margin-top: 20px;
+    }
+
+    .table tr {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .table td {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:500px){
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project{
+        width: 65%;
+    }
+}
+
+@media(max-width:400px) {
+    h1 {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    main{
+        margin-top: 100px;
+    }
+
+    nav a{
+            font-size: 18px;
+    }
+}
+
+@media(max-width:277px){
+    h1{
+        font-size: 25px;
+        padding: 7px; 
+    }
+    nav a{
+        font-size: 16px;
+    }
+    main{
+        margin-top: 88px;
+    }
+}
